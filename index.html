@@ -1,234 +1,353 @@
-<!-- Wales Instruments & Valves home page for Blogger. Paste into a Page or Post in HTML view. No JavaScript. -->
-<style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-NVWC7HCM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+</script>
   <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Wales Instruments &amp; Valves | Level, Flow and Temperature Switches</title>
-<meta name="description" content="Wales Instruments &amp; Valves is a value added distributor of Compac Engineering level, flow and temperature switches and pump controls. New, 100% inspected, most orders ship same or next day.">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://walesinst.com/">
-
-<meta property="og:type" content="website">
-<meta property="og:title" content="Wales Instruments &amp; Valves">
-<meta property="og:description" content="Level, flow and temperature switches and pump controls. Always new, 100% inspected.">
-<meta property="og:url" content="https://walesinst.com/">
-<meta property="og:image" content="https://walesinst.com/cdn/shop/files/Final_Logo_PNG2.png?v=1613718301">
-<meta name="twitter:card" content="summary">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wales Instruments &amp; Valves | Level, Flow and Temperature Switches</title>
+  <meta name="description" content="Wales Instruments &amp; Valves is a value added distributor of Compac Engineering level, flow and temperature switches and pump controls. New, 100% inspected, most orders ship same or next day.">
+  <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://walesinst.com/">
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap');
 
-body{overflow-x:clip}
-/* ===== COLORS: logo ke hisaab se sirf ye values badalni hain ===== */
-#wv{--dark:#0a2239;--dark-2:#16405f;--teal:#c8102e;--accent:#d2102f;--accent-hover:#e8344f;--bg:#f4f6f8;--ink:#0f2233;--muted:#4a5b6b;--line:#dbe1e7;
-width:100vw;margin-left:calc(50% - 50vw);margin-top:0;margin-bottom:0;padding:0;font-family:'Barlow',Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.5;font-size:17px;text-align:left;box-sizing:border-box}
-#wv *{box-sizing:border-box}
-#wv a{color:inherit;text-decoration:none;border:0}
-#wv h1,#wv h2,#wv h3{font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:700;margin:0;line-height:1.05;color:inherit;letter-spacing:0;text-transform:none}
-#wv p,#wv ul,#wv li,#wv address{margin-top:0;margin-bottom:0}
-#wv ul{list-style:none;padding:0;margin:0}
-#wv svg{max-width:100%}
-#wv :focus-visible{outline:3px solid var(--accent);outline-offset:3px}
-#wv .wrap{max-width:1240px;margin:0 auto;padding:0 24px}
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Wales Instruments &amp; Valves">
+  <meta property="og:description" content="Level, flow and temperature switches and pump controls. Always new, 100% inspected.">
+  <meta property="og:url" content="https://walesinst.com/">
+  <meta property="og:image" content="https://walesinst.com/cdn/shop/files/Final_Logo_PNG2.png?v=1613718301">
+  <meta name="twitter:card" content="summary">
 
-#wv .btn{display:inline-block;padding:14px 26px;font-weight:600;border-radius:4px;min-height:48px;line-height:1.4;transition:background .15s}
-#wv .btn-primary{background:var(--accent);color:#fff}
-#wv .btn-primary:hover{background:var(--accent-hover)}
-#wv .btn-outline{border:2px solid #fff;color:#fff}
-#wv .btn-outline:hover{background:rgba(255,255,255,.14)}
-#wv .btn-dark{background:var(--dark);color:#fff}
-#wv .btn-dark:hover{background:var(--dark-2)}
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
 
-#wv .topbar{background:var(--dark);color:#cfd9e2;font-size:15px;padding:8px 0}
-#wv .topbar .wrap{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap}
-#wv .topbar a{color:#fff;font-weight:600}
+  <style>
+    body { overflow-x: clip; }
+    /* ===== COLORS: logo ke hisaab se sirf ye values badalni hain ===== */
+    #wv {
+      --dark: #0a2239;
+      --dark-2: #16405f;
+      --teal: #c8102e;
+      --accent: #d2102f;
+      --accent-hover: #e8344f;
+      --bg: #f4f6f8;
+      --ink: #0f2233;
+      --muted: #4a5b6b;
+      --line: #dbe1e7;
+      width: 100vw;
+      margin-left: calc(50% - 50vw);
+      margin-top: 0;
+      margin-bottom: 0;
+      padding: 0;
+      font-family: 'Barlow', Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.5;
+      font-size: 17px;
+      text-align: left;
+      box-sizing: border-box;
+    }
+    #wv * { box-sizing: border-box; }
+    #wv a { color: inherit; text-decoration: none; border: 0; }
+    #wv h1, #wv h2, #wv h3 { font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 700; margin: 0; line-height: 1.05; color: inherit; letter-spacing: 0; text-transform: none; }
+    #wv p, #wv ul, #wv li, #wv address { margin-top: 0; margin-bottom: 0; }
+    #wv ul { list-style: none; padding: 0; margin: 0; }
+    #wv svg { max-width: 100%; }
+    #wv :focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+    #wv .wrap { max-width: 1240px; margin: 0 auto; padding: 0 24px; }
 
-#wv .head{background:#fff;border-bottom:1px solid var(--line);position:relative;z-index:5}
-#wv .bar{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:76px}
-#wv .logo{display:flex;align-items:center}
-#wv .logo img{height:54px;width:auto;max-width:100%;display:block}
-#wv .nav ul{display:flex;gap:28px;font-weight:600}
-#wv .nav a{padding:10px 2px;display:inline-block;border-bottom:2px solid transparent}
-#wv .nav a:hover{border-color:var(--accent)}
-#wv .actions{display:flex;gap:14px;align-items:center}
-#wv .actions>a:first-child{font-weight:600}
-#wv .menu-toggle,#wv .menu-btn{display:none}
-#wv .menu-btn{width:48px;height:48px;border:1px solid var(--line);border-radius:6px;align-items:center;justify-content:center;cursor:pointer}
-#wv .menu-btn span,#wv .menu-btn span::before,#wv .menu-btn span::after{display:block;width:22px;height:2px;background:var(--dark);position:relative;content:""}
-#wv .menu-btn span::before{position:absolute;top:-7px}
-#wv .menu-btn span::after{position:absolute;top:7px}
+    #wv .btn { display: inline-block; padding: 14px 26px; font-weight: 600; border-radius: 4px; min-height: 48px; line-height: 1.4; transition: background .15s; }
+    #wv .btn-primary { background: var(--accent); color: #fff; }
+    #wv .btn-primary:hover { background: var(--accent-hover); }
+    #wv .btn-outline { border: 2px solid #fff; color: #fff; }
+    #wv .btn-outline:hover { background: rgba(255,255,255,.14); }
+    #wv .btn-dark { background: var(--dark); color: #fff; }
+    #wv .btn-dark:hover { background: var(--dark-2); }
 
-#wv .hero{background:linear-gradient(120deg,var(--dark),var(--dark-2));color:#fff}
-#wv .hero .wrap{display:grid;grid-template-columns:1.2fr 1fr;gap:48px;align-items:center;padding-top:80px;padding-bottom:80px}
-#wv .hero h1{font-size:clamp(44px,7vw,78px);margin-bottom:20px;color:#fff}
-#wv .hero p{font-size:20px;color:#d7e1e9;max-width:520px;margin:0 0 30px}
-#wv .cta{display:flex;gap:14px;flex-wrap:wrap}
-#wv .hero-art{display:flex;justify-content:center}
-#wv .hero-art svg{width:100%;max-width:380px;border:1px solid rgba(255,255,255,.2);border-radius:8px;background:rgba(255,255,255,.05)}
+    #wv .topbar { background: var(--dark); color: #cfd9e2; font-size: 15px; padding: 8px 0; }
+    #wv .topbar .wrap { display: flex; justify-content: space-between; gap: 8px; flex-wrap: wrap; }
+    #wv .topbar a { color: #fff; font-weight: 600; }
 
-#wv .trust{background:#fff;border-bottom:1px solid var(--line)}
-#wv .trust ul{padding:28px 24px;display:grid;grid-template-columns:repeat(4,1fr);gap:20px;max-width:1240px;margin:0 auto}
-#wv .trust strong{display:block;font-family:'Barlow Condensed',sans-serif;font-size:23px;color:var(--dark)}
-#wv .trust span{font-size:15px;color:var(--muted)}
+    #wv .head { background: #fff; border-bottom: 1px solid var(--line); position: relative; z-index: 5; }
+    #wv .bar { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 76px; }
+    #wv .logo { display: flex; align-items: center; }
+    #wv .logo img { height: 54px; width: auto; max-width: 100%; display: block; }
+    #wv .nav ul { display: flex; gap: 28px; font-weight: 600; }
+    #wv .nav a { padding: 10px 2px; display: inline-block; border-bottom: 2px solid transparent; }
+    #wv .nav a:hover { border-color: var(--accent); }
+    #wv .actions { display: flex; gap: 14px; align-items: center; }
+    #wv .actions > a:first-child { font-weight: 600; }
+    #wv .menu-toggle, #wv .menu-btn { display: none; }
+    #wv .menu-btn { width: 48px; height: 48px; border: 1px solid var(--line); border-radius: 6px; align-items: center; justify-content: center; cursor: pointer; }
+    #wv .menu-btn span, #wv .menu-btn span::before, #wv .menu-btn span::after { display: block; width: 22px; height: 2px; background: var(--dark); position: relative; content: ""; }
+    #wv .menu-btn span::before { position: absolute; top: -7px; }
+    #wv .menu-btn span::after { position: absolute; top: 7px; }
 
-#wv .sec{padding:72px 0}
-#wv .sec-head{display:flex;justify-content:space-between;align-items:end;gap:16px;flex-wrap:wrap;margin-bottom:28px}
-#wv .sec-head h2{font-size:clamp(34px,5vw,48px)}
-#wv .link{color:var(--teal);font-weight:600;text-decoration:underline;text-underline-offset:4px}
-#wv .grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
-#wv .card{display:block;background:#fff;border:1px solid var(--line);border-radius:6px;padding:24px;transition:border-color .15s,transform .15s}
-#wv a.card:hover{border-color:var(--teal);transform:translateY(-2px)}
-#wv .card h3{font-size:26px;margin-bottom:8px;color:var(--ink)}
-#wv .card p{margin:0 0 14px;color:var(--muted)}
-#wv .go{color:var(--teal);font-weight:600}
-#wv .kind{font-size:14px;color:var(--teal);font-weight:600}
-#wv .name{font-weight:600;margin:4px 0 6px}
-#wv .price{font-family:'Barlow Condensed',sans-serif;font-size:30px;font-weight:700}
-#wv .price s{font-size:18px;color:#6b7a88;font-weight:600;margin-left:6px}
+    #wv .hero { background: linear-gradient(120deg, var(--dark), var(--dark-2)); color: #fff; }
+    #wv .hero .wrap { display: grid; grid-template-columns: 1.2fr 1fr; gap: 48px; align-items: center; padding-top: 80px; padding-bottom: 80px; }
+    #wv .hero h1 { font-size: clamp(44px, 7vw, 78px); margin-bottom: 20px; color: #fff; }
+    #wv .hero p { font-size: 20px; color: #d7e1e9; max-width: 520px; margin: 0 0 30px; }
+    #wv .cta { display: flex; gap: 14px; flex-wrap: wrap; }
+    #wv .hero-art { display: flex; justify-content: center; }
+    #wv .hero-art svg { width: 100%; max-width: 380px; border: 1px solid rgba(255,255,255,.2); border-radius: 8px; background: rgba(255,255,255,.05); }
 
-#wv .about{background:var(--dark);color:#fff}
-#wv .about .wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px}
-#wv .about h2{font-size:clamp(34px,5vw,48px);margin-bottom:16px;color:#fff}
-#wv .about p{color:#d7e1e9}
-#wv .news{border-left:3px solid var(--accent);padding-left:28px}
-#wv .news h3{font-size:26px;margin-bottom:10px;color:#fff}
-#wv .news p{margin-bottom:12px}
+    #wv .trust { background: #fff; border-bottom: 1px solid var(--line); }
+    #wv .trust ul { padding: 28px 24px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; max-width: 1240px; margin: 0 auto; }
+    #wv .trust strong { display: block; font-family: 'Barlow Condensed', sans-serif; font-size: 23px; color: var(--dark); }
+    #wv .trust span { font-size: 15px; color: var(--muted); }
 
-#wv .band{background:var(--accent);color:#fff;padding:60px 0}
-#wv .band .btn-dark{background:#fff;color:var(--dark)}#wv .band .btn-dark:hover{background:#e9eef3}#wv .band .wrap{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
-#wv .band h2{font-size:clamp(30px,4.5vw,44px);color:#fff}
-#wv .band p{margin:8px 0 0;font-size:18px}
+    #wv .sec { padding: 72px 0; }
+    #wv .sec-head { display: flex; justify-content: space-between; align-items: end; gap: 16px; flex-wrap: wrap; margin-bottom: 28px; }
+    #wv .sec-head h2 { font-size: clamp(34px, 5vw, 48px); }
+    #wv .link { color: var(--teal); font-weight: 600; text-decoration: underline; text-underline-offset: 4px; }
+    #wv .grid { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+    #wv .card { display: block; background: #fff; border: 1px solid var(--line); border-radius: 6px; padding: 24px; transition: border-color .15s, transform .15s; }
+    #wv a.card:hover { border-color: var(--teal); transform: translateY(-2px); }
+    #wv .card h3 { font-size: 26px; margin-bottom: 8px; color: var(--ink); }
+    #wv .card p { margin: 0 0 14px; color: var(--muted); }
+    #wv .go { color: var(--teal); font-weight: 600; }
+    #wv .kind { font-size: 14px; color: var(--teal); font-weight: 600; }
+    #wv .name { font-weight: 600; margin: 4px 0 6px; }
+    #wv .price { font-family: 'Barlow Condensed', sans-serif; font-size: 30px; font-weight: 700; }
+    #wv .price s { font-size: 18px; color: #6b7a88; font-weight: 600; margin-left: 6px; }
 
-#wv .foot{background:var(--dark);color:#cfd9e2;padding:56px 0 28px;font-size:16px}
-#wv .foot .grid{grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:32px}
-#wv .foot h3{font-size:22px;color:#fff;margin-bottom:10px}
-#wv .foot li{margin:6px 0}
-#wv .foot a:hover{color:#fff;text-decoration:underline}
-#wv .copy{margin-top:32px;font-size:14px;color:#8fa1b1}
+    #wv .about { background: var(--dark); color: #fff; }
+    #wv .about .wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
+    #wv .about h2 { font-size: clamp(34px, 5vw, 48px); margin-bottom: 16px; color: #fff; }
+    #wv .about p { color: #d7e1e9; }
+    #wv .news { border-left: 3px solid var(--accent); padding-left: 28px; }
+    #wv .news h3 { font-size: 26px; margin-bottom: 10px; color: #fff; }
+    #wv .news p { margin-bottom: 12px; }
 
-@media (max-width:860px){
-  #wv .hero .wrap,#wv .about .wrap{grid-template-columns:1fr}
-  #wv .hero .wrap{padding-top:56px;padding-bottom:56px}
-  #wv .hero-art{display:none}
-  #wv .trust ul{grid-template-columns:1fr 1fr}
-  #wv .sec{padding:52px 0}
-  #wv .menu-btn{display:flex}
-  #wv .actions .btn{display:none}
-  #wv .nav{position:absolute;left:0;right:0;top:100%;background:#fff;border-bottom:1px solid var(--line);display:none}
-  #wv .nav ul{flex-direction:column;gap:0;padding:8px 24px 16px}
-  #wv .nav a{display:block;padding:14px 0;border-bottom:1px solid var(--line)}
-  #wv .menu-toggle:checked ~ .nav{display:block}
-}
-@media (max-width:520px){
-  #wv .topbar .wrap{justify-content:center;text-align:center}
-  #wv .trust ul{grid-template-columns:1fr}
-  #wv .btn{width:100%;text-align:center}
-}
-@media (prefers-reduced-motion:reduce){#wv *{transition:none!important}}
-</style>
+    #wv .band { background: var(--accent); color: #fff; padding: 60px 0; }
+    #wv .band .btn-dark { background: #fff; color: var(--dark); }
+    #wv .band .btn-dark:hover { background: #e9eef3; }
+    #wv .band .wrap { display: flex; justify-content: space-between; align-items: center; gap: 24px; flex-wrap: wrap; }
+    #wv .band h2 { font-size: clamp(30px, 4.5vw, 44px); color: #fff; }
+    #wv .band p { margin: 8px 0 0; font-size: 18px; }
 
-<div id="wv">
-<div class="topbar"><div class="wrap">
-  <span>Most orders ship same day or next day by UPS</span>
-  <span>Call us: <a href="tel:6514979080">651-497-9080</a></span>
-</div></div>
+    #wv .foot { background: var(--dark); color: #cfd9e2; padding: 56px 0 28px; font-size: 16px; }
+    #wv .foot .grid { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 32px; }
+    #wv .foot h3 { font-size: 22px; color: #fff; margin-bottom: 10px; }
+    #wv .foot li { margin: 6px 0; }
+    #wv .foot a:hover { color: #fff; text-decoration: underline; }
+    #wv .copy { margin-top: 32px; font-size: 14px; color: #8fa1b1; }
 
-<div class="head"><div class="wrap bar">
-  <a class="logo" href="https://walesinst.com/" aria-label="Wales Instruments &amp; Valves home"><img src="https://walesinst.com/cdn/shop/files/Final_Logo_PNG2.png?v=1613718301" alt="Wales Instruments &amp; Valves"></a>
-  <input type="checkbox" id="wv-menu" class="menu-toggle" aria-label="Open menu">
-  <label for="wv-menu" class="menu-btn" aria-hidden="true"><span></span></label>
-  <nav class="nav" aria-label="Main"><ul>
-    <li><a href="https://walesinst.com/">Home</a></li>
-    <li><a href="#wv-shop">Shop</a></li>
-    <li><a href="#wv-about">About us</a></li>
-    <li><a href="https://walesinst.com/pages/faqs">FAQs</a></li>
-    <li><a href="https://walesinst.com/pages/contact-us">Contact</a></li>
-  </ul></nav>
-  <div class="actions">
-    <a href="https://walesinst.com/account/login">Sign in</a>
-    <a class="btn btn-dark" href="https://walesinst.com/cart/">Cart</a>
-  </div>
-</div></div>
+    @media (max-width: 860px) {
+      #wv .hero .wrap, #wv .about .wrap { grid-template-columns: 1fr; }
+      #wv .hero .wrap { padding-top: 56px; padding-bottom: 56px; }
+      #wv .hero-art { display: none; }
+      #wv .trust ul { grid-template-columns: 1fr 1fr; }
+      #wv .sec { padding: 52px 0; }
+      #wv .menu-btn { display: flex; }
+      #wv .actions .btn { display: none; }
+      #wv .nav { position: absolute; left: 0; right: 0; top: 100%; background: #fff; border-bottom: 1px solid var(--line); display: none; }
+      #wv .nav ul { flex-direction: column; gap: 0; padding: 8px 24px 16px; }
+      #wv .nav a { display: block; padding: 14px 0; border-bottom: 1px solid var(--line); }
+      #wv .menu-toggle:checked ~ .nav { display: block; }
+    }
+    @media (max-width: 520px) {
+      #wv .topbar .wrap { justify-content: center; text-align: center; }
+      #wv .trust ul { grid-template-columns: 1fr; }
+      #wv .btn { width: 100%; text-align: center; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      #wv * { transition: none !important; }
+    }
+  </style>
+</head>
+<body>
 
-<div class="hero"><div class="wrap">
-  <div>
-    <h1>Level, flow and temperature switches. Always new.</h1>
-    <p>Never refurbished. Every part is 100% inspected and ships from fresh inventory, in Polypropylene, Kynar and Acetal.</p>
-    <div class="cta">
-      <a class="btn btn-primary" href="https://walesinst.com/collections/compac">Shop Compac switches</a>
-      <a class="btn btn-outline" href="tel:6514979080">Call 651-497-9080</a>
+  <div id="wv">
+    <div class="topbar">
+      <div class="wrap">
+        <span>Most orders ship same day or next day by UPS</span>
+        <span>Call us: <a href="tel:6514979080">651-497-9080</a></span>
+      </div>
     </div>
-  </div>
-  <div class="hero-art">
-    <svg viewBox="0 0 200 200" role="img" aria-label="Illustration of a level switch mounted in a tank" fill="none" stroke="#fff" stroke-width="3">
-      <rect x="70" y="14" width="60" height="30" rx="4" fill="#d2102f" stroke="none"/>
-      <rect x="94" y="44" width="12" height="104"/>
-      <rect x="78" y="86" width="44" height="14" rx="7" fill="#2d6a9a"/>
-      <path d="M30 120H170M30 140q35-10 70 0t70 0" stroke="#8fb8dc"/>
-      <path d="M30 40V190H170V40" stroke-opacity=".5"/>
-    </svg>
-  </div>
-</div></div>
 
-<div class="trust"><ul>
-  <li><strong>New, never refurbished</strong><span>Inventory bought recently</span></li>
-  <li><strong>100% inspected</strong><span>Before it leaves the factory</span></li>
-  <li><strong>Same or next day shipping</strong><span>On most items</span></li>
-  <li><strong>14-day returns</strong><span>Exchanges and refunds accepted</span></li>
-</ul></div>
+    <div class="head">
+      <div class="wrap bar">
+        <a class="logo" href="https://walesinst.com/" aria-label="Wales Instruments &amp; Valves home">
+          <img src="https://walesinst.com/cdn/shop/files/Final_Logo_PNG2.png?v=1613718301" alt="Wales Instruments &amp; Valves">
+        </a>
+        <input type="checkbox" id="wv-menu" class="menu-toggle" aria-label="Open menu">
+        <label for="wv-menu" class="menu-btn" aria-hidden="true"><span></span></label>
+        <nav class="nav" aria-label="Main">
+          <ul>
+            <li><a href="https://walesinst.com/">Home</a></li>
+            <li><a href="#wv-shop">Shop</a></li>
+            <li><a href="#wv-about">About us</a></li>
+            <li><a href="https://walesinst.com/pages/faqs">FAQs</a></li>
+            <li><a href="https://walesinst.com/pages/contact-us">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="actions">
+          <a href="https://walesinst.com/account/login">Sign in</a>
+          <a class="btn btn-dark" href="https://walesinst.com/cart/">Cart</a>
+        </div>
+      </div>
+    </div>
 
-<div class="sec" id="wv-shop" style="padding-bottom:36px"><div class="wrap">
-  <div class="sec-head"><h2>Shop Compac Engineering</h2><a class="link" href="https://walesinst.com/collections/all">View all products</a></div>
-  <div class="grid">
-    <a class="card" href="https://walesinst.com/collections/series-10-top-mounted-level-switch"><h3>Series 10 top mounted level switches</h3><p>Modular liquid level system that cuts OEM engineering, hardware and labor cost.</p><span class="go">Shop top mounted</span></a>
-    <a class="card" href="https://walesinst.com/collections/series-10-side-mounted-level-switch"><h3>Series 10 side mounted level switches</h3><p>Side entry level sensing, including the 15-650 configuration.</p><span class="go">Shop side mounted</span></a>
-    <a class="card" href="https://walesinst.com/collections/series-20-level-switches"><h3>Series 20 level switches</h3><p>Heavier duty level switching for industrial tanks and sumps.</p><span class="go">Shop Series 20</span></a>
-    <a class="card" href="https://walesinst.com/collections/compac-engineering-5-series-flow-switches"><h3>5-Series flow switches</h3><p>Polypropylene and Kynar flow switches.</p><span class="go">Shop flow switches</span></a>
-    <a class="card" href="https://walesinst.com/collections/series-20-pump-controls"><h3>Series 20 pump controls</h3><p>Switch contactors, motor starters and solenoid valves with a sealed Yaskawa Bestact element.</p><span class="go">Shop pump controls</span></a>
-    <a class="card" href="https://walesinst.com/collections/compac-engineering-11-800-series-temperature-switches"><h3>10-800 Series temperature switches</h3><p>Corrosion resistant temperature switching.</p><span class="go">Shop temperature switches</span></a>
+    <div class="hero">
+      <div class="wrap">
+        <div>
+          <h1>Level, flow and temperature switches. Always new.</h1>
+          <p>Never refurbished. Every part is 100% inspected and ships from fresh inventory, in Polypropylene, Kynar and Acetal.</p>
+          <div class="cta">
+            <a class="btn btn-primary" href="https://walesinst.com/collections/compac">Shop Compac switches</a>
+            <a class="btn btn-outline" href="tel:6514979080">Call 651-497-9080</a>
+          </div>
+        </div>
+        <div class="hero-art">
+          <svg viewBox="0 0 200 200" role="img" aria-label="Illustration of a level switch mounted in a tank" fill="none" stroke="#fff" stroke-width="3">
+            <rect x="70" y="14" width="60" height="30" rx="4" fill="#d2102f" stroke="none"/>
+            <rect x="94" y="44" width="12" height="104"/>
+            <rect x="78" y="86" width="44" height="14" rx="7" fill="#2d6a9a"/>
+            <path d="M30 120H170M30 140q35-10 70 0t70 0" stroke="#8fb8dc"/>
+            <path d="M30 40V190H170V40" stroke-opacity=".5"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="trust">
+      <ul>
+        <li><strong>New, never refurbished</strong><span>Inventory bought recently</span></li>
+        <li><strong>100% inspected</strong><span>Before it leaves the factory</span></li>
+        <li><strong>Same or next day shipping</strong><span>On most items</span></li>
+        <li><strong>14-day returns</strong><span>Exchanges and refunds accepted</span></li>
+      </ul>
+    </div>
+
+    <div class="sec" id="wv-shop" style="padding-bottom:36px">
+      <div class="wrap">
+        <div class="sec-head">
+          <h2>Shop Compac Engineering</h2>
+          <a class="link" href="https://walesinst.com/collections/all">View all products</a>
+        </div>
+        <div class="grid">
+          <a class="card" href="https://walesinst.com/collections/series-10-top-mounted-level-switch">
+            <h3>Series 10 top mounted level switches</h3>
+            <p>Modular liquid level system that cuts OEM engineering, hardware and labor cost.</p>
+            <span class="go">Shop top mounted</span>
+          </a>
+          <a class="card" href="https://walesinst.com/collections/series-10-side-mounted-level-switch">
+            <h3>Series 10 side mounted level switches</h3>
+            <p>Side entry level sensing, including the 15-650 configuration.</p>
+            <span class="go">Shop side mounted</span>
+          </a>
+          <a class="card" href="https://walesinst.com/collections/series-20-level-switches">
+            <h3>Series 20 level switches</h3>
+            <p>Heavier duty level switching for industrial tanks and sumps.</p>
+            <span class="go">Shop Series 20</span>
+          </a>
+          <a class="card" href="https://walesinst.com/collections/compac-engineering-5-series-flow-switches">
+            <h3>5-Series flow switches</h3>
+            <p>Polypropylene and Kynar flow switches.</p>
+            <span class="go">Shop flow switches</span>
+          </a>
+          <a class="card" href="https://walesinst.com/collections/series-20-pump-controls">
+            <h3>Series 20 pump controls</h3>
+            <p>Switch contactors, motor starters and solenoid valves with a sealed Yaskawa Bestact element.</p>
+            <span class="go">Shop pump controls</span>
+          </a>
+          <a class="card" href="https://walesinst.com/collections/compac-engineering-11-800-series-temperature-switches">
+            <h3>10-800 Series temperature switches</h3>
+            <p>Corrosion resistant temperature switching.</p>
+            <span class="go">Shop temperature switches</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec" style="padding-top:36px">
+      <div class="wrap">
+        <div class="sec-head">
+          <h2>Popular switches</h2>
+        </div>
+        <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(230px,1fr))">
+          <a class="card" href="https://walesinst.com/products/compac-engineering-erecta-switch-10-782-pp">
+            <div class="kind">Level switch</div>
+            <div class="name" style="margin-bottom:0">10-782-PP Erecta Switch</div>
+          </a>
+          <a class="card" href="https://walesinst.com/products/compac-engineering-erecta-switch-10-782-kr">
+            <div class="kind">Level switch, Kynar</div>
+            <div class="name" style="margin-bottom:0">10-782-KR Erecta Switch</div>
+          </a>
+          <a class="card" href="https://walesinst.com/products/5-21-pp-polypropylene-flow-switch">
+            <div class="kind">Flow switch</div>
+            <div class="name" style="margin-bottom:0">5-21-PP Polypropylene</div>
+          </a>
+          <a class="card" href="https://walesinst.com/products/5-21h-kr-kynar-flow-switch">
+            <div class="kind">Flow switch, Kynar</div>
+            <div class="name" style="margin-bottom:0">5-21H-KR Kynar</div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="about" id="wv-about" style="padding:72px 0">
+      <div class="wrap">
+        <div>
+          <h2>Recently purchased. Fully inspected.</h2>
+          <p>Wales Instruments is a Value Added Distributor for Compac Engineering. Our inventory is bought recently, always new, and every part is 100% inspected before it leaves the factory and arrives at our facility.</p>
+        </div>
+        <div class="news">
+          <h3>What's new</h3>
+          <p><strong>Compac Engineering:</strong> new Kynar corrosion resistant level, temperature and flow switch configurations.</p>
+          <p><strong>Pacer Instruments:</strong> the DA400 series low flow vane anemometer replaces the DA40.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="band" id="wv-contact">
+      <div class="wrap">
+        <div>
+          <h2>Not sure which switch you need?</h2>
+          <p>Call us and we'll help you match the part to your application.</p>
+        </div>
+        <a class="btn btn-dark" href="tel:6514979080">Call 651-497-9080</a>
+      </div>
+    </div>
+
+    <div class="foot">
+      <div class="wrap grid">
+        <div>
+          <h3>Wales Instruments &amp; Valves</h3>
+          <address style="font-style:normal;line-height:1.6">2004 Emerald Lane<br>Eagan, MN 55122<br><a href="mailto:customerservice@walesinst.com">customerservice@walesinst.com</a><br><a href="tel:6514979080">651-497-9080</a></address>
+        </div>
+        <div>
+          <h3>About</h3>
+          <ul>
+            <li><a href="https://walesinst.com/pages/about-us">About us</a></li>
+            <li><a href="https://walesinst.com/pages/contact-us">Contact</a></li>
+            <li><a href="https://walesinst.com/pages/sitemap">Sitemap</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Policies</h3>
+          <ul>
+            <li><a href="https://walesinst.com/pages/faqs">FAQs</a></li>
+            <li><a href="https://walesinst.com/pages/shipping">Shipping</a></li>
+            <li><a href="https://walesinst.com/pages/policies">Returns and policies</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Get offers by email</h3>
+          <p style="margin:0 0 12px">Join our mailing list for exclusive offers.</p>
+          <a class="btn btn-primary" href="https://walesinst.com/">Subscribe</a>
+        </div>
+      </div>
+      <div class="wrap copy">© Wales Instruments &amp; Valves LLC</div>
+    </div>
+
   </div>
-</div></div>
 
-<div class="sec" style="padding-top:36px"><div class="wrap">
-  <div class="sec-head"><h2>Popular switches</h2></div>
-  <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(230px,1fr))">
-    <a class="card" href="https://walesinst.com/products/compac-engineering-erecta-switch-10-782-pp"><div class="kind">Level switch</div><div class="name" style="margin-bottom:0">10-782-PP Erecta Switch</div></a>
-    <a class="card" href="https://walesinst.com/products/compac-engineering-erecta-switch-10-782-kr"><div class="kind">Level switch, Kynar</div><div class="name" style="margin-bottom:0">10-782-KR Erecta Switch</div></a>
-    <a class="card" href="https://walesinst.com/products/5-21-pp-polypropylene-flow-switch"><div class="kind">Flow switch</div><div class="name" style="margin-bottom:0">5-21-PP Polypropylene</div></a>
-    <a class="card" href="https://walesinst.com/products/5-21h-kr-kynar-flow-switch"><div class="kind">Flow switch, Kynar</div><div class="name" style="margin-bottom:0">5-21H-KR Kynar</div></a>
-  </div>
-</div></div>
-
-<div class="about" id="wv-about" style="padding:72px 0"><div class="wrap">
-  <div>
-    <h2>Recently purchased. Fully inspected.</h2>
-    <p>Wales Instruments is a Value Added Distributor for Compac Engineering. Our inventory is bought recently, always new, and every part is 100% inspected before it leaves the factory and arrives at our facility.</p>
-  </div>
-  <div class="news">
-    <h3>What's new</h3>
-    <p><strong>Compac Engineering:</strong> new Kynar corrosion resistant level, temperature and flow switch configurations.</p>
-    <p><strong>Pacer Instruments:</strong> the DA400 series low flow vane anemometer replaces the DA40.</p>
-  </div>
-</div></div>
-
-<div class="band" id="wv-contact"><div class="wrap">
-  <div><h2>Not sure which switch you need?</h2><p>Call us and we'll help you match the part to your application.</p></div>
-  <a class="btn btn-dark" href="tel:6514979080">Call 651-497-9080</a>
-</div></div>
-
-<div class="foot"><div class="wrap grid">
-  <div>
-    <h3>Wales Instruments &amp; Valves</h3>
-    <address style="font-style:normal;line-height:1.6">2004 Emerald Lane<br>Eagan, MN 55122<br><a href="mailto:customerservice@walesinst.com">customerservice@walesinst.com</a><br><a href="tel:6514979080">651-497-9080</a></address>
-  </div>
-  <div><h3>About</h3><ul>
-    <li><a href="https://walesinst.com/pages/about-us">About us</a></li>
-    <li><a href="https://walesinst.com/pages/contact-us">Contact</a></li>
-    <li><a href="https://walesinst.com/pages/sitemap">Sitemap</a></li></ul></div>
-  <div><h3>Policies</h3><ul>
-    <li><a href="https://walesinst.com/pages/faqs">FAQs</a></li>
-    <li><a href="https://walesinst.com/pages/shipping">Shipping</a></li>
-    <li><a href="https://walesinst.com/pages/policies">Returns and policies</a></li></ul></div>
-  <div><h3>Get offers by email</h3><p style="margin:0 0 12px">Join our mailing list for exclusive offers.</p><a class="btn btn-primary" href="https://walesinst.com/">Subscribe</a></div>
-</div>
-<div class="wrap copy">© Wales Instruments &amp; Valves LLC</div></div>
-
-</div>
+</body>
+</html>
