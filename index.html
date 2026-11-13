@@ -61,7 +61,7 @@
     #wv :focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
     #wv .wrap { max-width: 1240px; margin: 0 auto; padding: 0 24px; }
 
-    #wv .btn { display: inline-block; padding: 14px 26px; font-weight: 600; border-radius: 4px; min-height: 48px; line-height: 1.4; transition: background .15s; }
+    #wv .btn { display: inline-block; padding: 14px 26px; font-weight: 600; border-radius: 4px; min-height: 48px; line-height: 1.4; transition: background .15s; border: none; cursor: pointer; font-family: inherit; font-size: 17px; }
     #wv .btn-primary { background: var(--accent); color: #fff; }
     #wv .btn-primary:hover { background: var(--accent-hover); }
     #wv .btn-outline { border: 2px solid #fff; color: #fff; }
@@ -124,12 +124,35 @@
     #wv .news h3 { font-size: 26px; margin-bottom: 10px; color: #fff; }
     #wv .news p { margin-bottom: 12px; }
 
-    #wv .band { background: var(--accent); color: #fff; padding: 60px 0; }
-    #wv .band .btn-dark { background: #fff; color: var(--dark); }
-    #wv .band .btn-dark:hover { background: #e9eef3; }
-    #wv .band .wrap { display: flex; justify-content: space-between; align-items: center; gap: 24px; flex-wrap: wrap; }
-    #wv .band h2 { font-size: clamp(30px, 4.5vw, 44px); color: #fff; }
-    #wv .band p { margin: 8px 0 0; font-size: 18px; }
+    /* ===== LEAD FORM SECTION STYLES ===== */
+    #wv .lead-sec { background: var(--bg); padding: 72px 0; border-top: 1px solid var(--line); }
+    #wv .lead-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 48px; align-items: start; }
+    #wv .lead-info h2 { font-size: clamp(34px, 5vw, 48px); margin-bottom: 14px; color: var(--dark); }
+    #wv .lead-info p { color: var(--muted); font-size: 18px; margin-bottom: 24px; }
+    #wv .lead-box { background: #fff; border: 1px solid var(--line); border-radius: 6px; padding: 32px; box-shadow: 0 4px 16px rgba(10,34,57,.04); }
+    #wv .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px; }
+    #wv .form-group { margin-bottom: 16px; }
+    #wv .form-group label { display: block; font-weight: 600; font-size: 15px; margin-bottom: 6px; color: var(--dark); }
+    #wv .form-group input,
+    #wv .form-group select,
+    #wv .form-group textarea {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1px solid var(--line);
+      border-radius: 4px;
+      font-family: inherit;
+      font-size: 16px;
+      color: var(--ink);
+      background: #fff;
+      transition: border-color .15s;
+    }
+    #wv .form-group input:focus,
+    #wv .form-group select:focus,
+    #wv .form-group textarea:focus {
+      border-color: var(--dark);
+      outline: none;
+    }
+    #wv .form-group textarea { min-height: 100px; resize: vertical; }
 
     #wv .foot { background: var(--dark); color: #cfd9e2; padding: 56px 0 28px; font-size: 16px; }
     #wv .foot .grid { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 32px; }
@@ -139,11 +162,11 @@
     #wv .copy { margin-top: 32px; font-size: 14px; color: #8fa1b1; }
 
     @media (max-width: 860px) {
-      #wv .hero .wrap, #wv .about .wrap { grid-template-columns: 1fr; }
+      #wv .hero .wrap, #wv .about .wrap, #wv .lead-grid { grid-template-columns: 1fr; gap: 32px; }
       #wv .hero .wrap { padding-top: 56px; padding-bottom: 56px; }
       #wv .hero-art { display: none; }
       #wv .trust ul { grid-template-columns: 1fr 1fr; }
-      #wv .sec { padding: 52px 0; }
+      #wv .sec, #wv .lead-sec { padding: 52px 0; }
       #wv .menu-btn { display: flex; }
       #wv .actions .btn { display: none; }
       #wv .nav { position: absolute; left: 0; right: 0; top: 100%; background: #fff; border-bottom: 1px solid var(--line); display: none; }
@@ -153,7 +176,8 @@
     }
     @media (max-width: 520px) {
       #wv .topbar .wrap { justify-content: center; text-align: center; }
-      #wv .trust ul { grid-template-columns: 1fr; }
+      #wv .trust ul, #wv .form-row { grid-template-columns: 1fr; gap: 0; }
+      #wv .lead-box { padding: 20px; }
       #wv .btn { width: 100%; text-align: center; }
     }
     @media (prefers-reduced-motion: reduce) {
@@ -184,7 +208,7 @@
             <li><a href="#wv-shop">Shop</a></li>
             <li><a href="#wv-about">About us</a></li>
             <li><a href="https://walesinst.com/pages/faqs">FAQs</a></li>
-            <li><a href="https://walesinst.com/pages/contact-us">Contact</a></li>
+            <li><a href="#wv-contact">Contact</a></li>
           </ul>
         </nav>
         <div class="actions">
@@ -201,7 +225,7 @@
           <p>Never refurbished. Every part is 100% inspected and ships from fresh inventory, in Polypropylene, Kynar and Acetal.</p>
           <div class="cta">
             <a class="btn btn-primary" href="https://walesinst.com/collections/compac">Shop Compac switches</a>
-            <a class="btn btn-outline" href="tel:6514979080">Call 651-497-9080</a>
+            <a class="btn btn-outline" href="#wv-contact">Request a Quote</a>
           </div>
         </div>
         <div class="hero-art">
@@ -306,13 +330,64 @@
       </div>
     </div>
 
-    <div class="band" id="wv-contact">
-      <div class="wrap">
-        <div>
+    <!-- ===== NEW LEAD FORM SECTION ===== -->
+    <div class="lead-sec" id="wv-contact">
+      <div class="wrap lead-grid">
+        <div class="lead-info">
           <h2>Not sure which switch you need?</h2>
-          <p>Call us and we'll help you match the part to your application.</p>
+          <p>Fill out the form with your part number or application details, and our team will get back to you quickly with pricing and availability.</p>
+          <p style="margin-bottom: 12px; color: var(--ink);"><strong>Prefer to talk directly?</strong></p>
+          <a class="btn btn-dark" href="tel:6514979080">Call 651-497-9080</a>
         </div>
-        <a class="btn btn-dark" href="tel:6514979080">Call 651-497-9080</a>
+
+        <div class="lead-box">
+          <!-- Shopify standard contact form endpoint -->
+          <form method="post" action="/contact#contact_form" id="contact_form" accept-charset="UTF-8">
+            <input type="hidden" name="form_type" value="contact" />
+            <input type="hidden" name="utf8" value="✓" />
+
+            <div class="form-row">
+              <div class="form-group" style="margin-bottom:0;">
+                <label for="wv-name">Full Name *</label>
+                <input type="text" id="wv-name" name="contact[name]" placeholder="John Doe" required>
+              </div>
+              <div class="form-group" style="margin-bottom:0;">
+                <label for="wv-company">Company</label>
+                <input type="text" id="wv-company" name="contact[Company]" placeholder="Company Name">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group" style="margin-bottom:0;">
+                <label for="wv-email">Work Email *</label>
+                <input type="email" id="wv-email" name="contact[email]" placeholder="john@company.com" required>
+              </div>
+              <div class="form-group" style="margin-bottom:0;">
+                <label for="wv-phone">Phone Number</label>
+                <input type="tel" id="wv-phone" name="contact[Phone]" placeholder="(555) 123-4567">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="wv-interest">Product / Switch Type</label>
+              <select id="wv-interest" name="contact[Product Interest]">
+                <option value="General Inquiry / Part Match">Help me match a part</option>
+                <option value="Level Switches">Level Switches (Series 10 / 20)</option>
+                <option value="Flow Switches">Flow Switches (5-Series)</option>
+                <option value="Temperature Switches">Temperature Switches (10-800 Series)</option>
+                <option value="Pump Controls">Series 20 Pump Controls</option>
+                <option value="Bulk / OEM Quote">Bulk / OEM Quote</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="wv-msg">Part Number or Application Details *</label>
+              <textarea id="wv-msg" name="contact[body]" placeholder="Enter part numbers, material (Polypropylene/Kynar), quantity, or application details..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width:100%;">Send Request</button>
+          </form>
+        </div>
       </div>
     </div>
 
