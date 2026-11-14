@@ -154,6 +154,19 @@
     }
     #wv .form-group textarea { min-height: 100px; resize: vertical; }
 
+    /* Thank You Message Box Styling */
+    #wv .thank-you-box {
+      display: none;
+      background-color: #dcfce7;
+      border: 1px solid #16a34a;
+      color: #14532d;
+      padding: 30px;
+      border-radius: 6px;
+      text-align: center;
+    }
+    #wv .thank-you-box h3 { font-size: 28px; margin-bottom: 10px; color: #166534; }
+    #wv .thank-you-box p { font-size: 17px; margin-bottom: 16px; }
+
     #wv .foot { background: var(--dark); color: #cfd9e2; padding: 56px 0 28px; font-size: 16px; }
     #wv .foot .grid { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 32px; }
     #wv .foot h3 { font-size: 22px; color: #fff; margin-bottom: 10px; }
@@ -191,7 +204,7 @@
     <div class="topbar">
       <div class="wrap">
         <span>Most orders ship same day or next day by UPS</span>
-        <span>Call us: <a href="tel:6514979080">651-497-9080</a></span>
+        <span>Call us: <a href="tel:6514979080" class="track-phone-click">651-497-9080</a></span>
       </div>
     </div>
 
@@ -324,105 +337,4 @@
         </div>
         <div class="news">
           <h3>What's new</h3>
-          <p><strong>Compac Engineering:</strong> new Kynar corrosion resistant level, temperature and flow switch configurations.</p>
-          <p><strong>Pacer Instruments:</strong> the DA400 series low flow vane anemometer replaces the DA40.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- ===== NEW LEAD FORM SECTION ===== -->
-    <div class="lead-sec" id="wv-contact">
-      <div class="wrap lead-grid">
-        <div class="lead-info">
-          <h2>Not sure which switch you need?</h2>
-          <p>Fill out the form with your part number or application details, and our team will get back to you quickly with pricing and availability.</p>
-          <p style="margin-bottom: 12px; color: var(--ink);"><strong>Prefer to talk directly?</strong></p>
-          <a class="btn btn-dark" href="tel:6514979080">Call 651-497-9080</a>
-        </div>
-
-        <div class="lead-box">
-          <!-- Shopify standard contact form endpoint -->
-          <form method="post" action="/contact#contact_form" id="contact_form" accept-charset="UTF-8">
-            <input type="hidden" name="form_type" value="contact" />
-            <input type="hidden" name="utf8" value="✓" />
-
-            <div class="form-row">
-              <div class="form-group" style="margin-bottom:0;">
-                <label for="wv-name">Full Name *</label>
-                <input type="text" id="wv-name" name="contact[name]" placeholder="John Doe" required>
-              </div>
-              <div class="form-group" style="margin-bottom:0;">
-                <label for="wv-company">Company</label>
-                <input type="text" id="wv-company" name="contact[Company]" placeholder="Company Name">
-              </div>
-            </div>
-
-            <div class="form-row">
-              <div class="form-group" style="margin-bottom:0;">
-                <label for="wv-email">Work Email *</label>
-                <input type="email" id="wv-email" name="contact[email]" placeholder="john@company.com" required>
-              </div>
-              <div class="form-group" style="margin-bottom:0;">
-                <label for="wv-phone">Phone Number</label>
-                <input type="tel" id="wv-phone" name="contact[Phone]" placeholder="(555) 123-4567">
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label for="wv-interest">Product / Switch Type</label>
-              <select id="wv-interest" name="contact[Product Interest]">
-                <option value="General Inquiry / Part Match">Help me match a part</option>
-                <option value="Level Switches">Level Switches (Series 10 / 20)</option>
-                <option value="Flow Switches">Flow Switches (5-Series)</option>
-                <option value="Temperature Switches">Temperature Switches (10-800 Series)</option>
-                <option value="Pump Controls">Series 20 Pump Controls</option>
-                <option value="Bulk / OEM Quote">Bulk / OEM Quote</option>
-              </select>
-            </div>
-
-            <div class="form-group">
-              <label for="wv-msg">Part Number or Application Details *</label>
-              <textarea id="wv-msg" name="contact[body]" placeholder="Enter part numbers, material (Polypropylene/Kynar), quantity, or application details..." required></textarea>
-            </div>
-
-            <button type="submit" class="btn btn-primary" style="width:100%;">Send Request</button>
-          </form>
-        </div>
-      </div>
-    </div>
-
-    <div class="foot">
-      <div class="wrap grid">
-        <div>
-          <h3>Wales Instruments &amp; Valves</h3>
-          <address style="font-style:normal;line-height:1.6">2004 Emerald Lane<br>Eagan, MN 55122<br><a href="mailto:customerservice@walesinst.com">customerservice@walesinst.com</a><br><a href="tel:6514979080">651-497-9080</a></address>
-        </div>
-        <div>
-          <h3>About</h3>
-          <ul>
-            <li><a href="https://walesinst.com/pages/about-us">About us</a></li>
-            <li><a href="https://walesinst.com/pages/contact-us">Contact</a></li>
-            <li><a href="https://walesinst.com/pages/sitemap">Sitemap</a></li>
-          </ul>
-        </div>
-        <div>
-          <h3>Policies</h3>
-          <ul>
-            <li><a href="https://walesinst.com/pages/faqs">FAQs</a></li>
-            <li><a href="https://walesinst.com/pages/shipping">Shipping</a></li>
-            <li><a href="https://walesinst.com/pages/policies">Returns and policies</a></li>
-          </ul>
-        </div>
-        <div>
-          <h3>Get offers by email</h3>
-          <p style="margin:0 0 12px">Join our mailing list for exclusive offers.</p>
-          <a class="btn btn-primary" href="https://walesinst.com/">Subscribe</a>
-        </div>
-      </div>
-      <div class="wrap copy">© Wales Instruments &amp; Valves LLC</div>
-    </div>
-
-  </div>
-
-</body>
-</html>
+          <p><strong>Compac Engineering:</strong>
